@@ -1,85 +1,104 @@
+/* roboto-300 - cyrillic_latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/roboto-v30-cyrillic_latin-300.woff2') format('woff2'); 
+}
+/* roboto-regular - cyrillic_latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/roboto-v30-cyrillic_latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-500 - cyrillic_latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/roboto-v30-cyrillic_latin-500.woff2') format('woff2');
+}
+/* roboto-700 - cyrillic_latin */
+@font-face {
+  font-display: swap; 
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/roboto-v30-cyrillic_latin-700.woff2') format('woff2'); 
+}
+
 * {
 	box-sizing: border-box;
-}
-
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
 }
 
 body {
   margin: 0;
   /* display: flex; */
-  place-items: center;
+  /* place-items: center; */
+  /* align-content: center; */
   /* min-width: 320px;
   min-height: 100vh; */
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  /* text-align: center; */
+  font-size: 1.8rem;
+  line-height: normal;
+  font-style: normal;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  max-width: 1230px;
+  /* border: 1px solid blue; */
+  margin: 0px auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 4.8rem;
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  line-height: 0.9;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.btn {
+  display: flex;
+  padding: 8px 16px;
+  align-items: center;
+  gap: 4px;
 }
 
-.card {
-  padding: 2em;
+.btn-primary {
+  color: white;
+  border-radius: 2px;
+  background: #1890ff;
+  border: 1px solid #1890ff;
+  box-shadow: 0px 0px 2px 0px black;
 }
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.btn-outline {
+  color: #595959;
+  border-radius: 2px;
+  border: 1px solid #d9d9d9;
+  background: white;
+  box-shadow: 0px 0px 2px 0px black;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.btn img {
+  height: 14px;
 }
 
 .logo img {
@@ -87,38 +106,154 @@ button:focus-visible {
 }
 
 .header {
-  height: 124px;
+  min-height: 124px;
+  display: flex;
+  align-items: center;
 }
 
 .header-box, .footer-box{
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.main {
+.header-controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
 
+.main {
+  flex-grow: 1;
+  background: linear-gradient(180deg, rgba(245, 245, 245, 0.00) 1.04%, #F5f5f5 100%);
+}
+
+.banner {
+  margin-bottom: 56px;
+}
+
+.banner-item {
+  background: #fff1b8;
+  background-image: url('./banners/bg-banner1.png');
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 68px;
+  border-radius: 10px;
+}
+
+.banner-item--title {
+  max-width: 50%;
+  color: #302c34;
+  font-size: 39px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.banner-item--subtitle {
+  max-width: 50%;
+  color: #302C34;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  .banner-item {
+    background-image: none;
+  }
+  .banner-item--title {
+    max-width: 100%;
+  }
+  .banner-item--subtitle{
+    max-width: 100%;
+  }
+}
+
+.products {}
+
+.products-header {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.products-header--title {
+  color: black;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.products-header--search {
+  min-width: 300px;
+  height: 36px;
+  border-radius: 2px;
+  border: 1px solid #d9d9d9;
+  background: white;
+  padding: 3px 12px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.products-header--search:focus {
+  outline: none;
+  border: 1px solid #d9d9d9;
+}
+
+.products-header--search::placeholder {
+  color: #bfbfbf;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .footer {
-  height: 156px;
+  min-height: 156px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 60px 0;
+}
+
+.footer-box {
+  gap: 36px;
+  flex-wrap: wrap;
 }
 
 .footer-nav {
   flex-grow: 1;
 }
 
-.logo {
-  max-width: 100px;
+.footer-nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
-.container {
-  height: 100%;
-  max-width: 1230px;
-  /* border: 1px solid blue; */
-  margin: 0px auto;
-  padding-left: 15px;
-  padding-right: 15px;
+.footer-nav ul li {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.footer-social {
+  scale: 0.75;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+}
+
+.logo {
+  max-width: 100px;
 }
