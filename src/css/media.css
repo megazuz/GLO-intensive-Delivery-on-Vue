@@ -1,0 +1,20 @@
+@media (max-width: 991px) {
+  .banner-item {
+    background-image: none;
+  }
+  .banner-item--title {
+    max-width: 100%;
+  }
+  .banner-item--subtitle {
+    max-width: 100%;
+  }
+  .card {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+}

@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="author" content="ZUZ">
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="./favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Delivery Food</title>
+    <script type="module" src="./src/main.js" defer></script>
   </head>
   <body>
 <div class="page-wrapper">
@@ -19,7 +20,7 @@
             <input type="text" class="header-controls--search" placeholder="Поиск блюд и ресторанов">
             <div class="header-controls">
               <button class="btn btn-primary"><img src="./public/icons/user_white.svg" alt="user">Войти</button>
-              <button class="btn btn-outline"><img src="./public/icons/shopping-cart_gray.svg" alt="shopping cart">Корзина</button>
+              <button class="btn btn-outline" id="cart-button"><img src="./public/icons/shopping-cart_gray.svg" alt="shopping cart">Корзина</button>
             </div>
           </div>
         </div>
@@ -42,118 +43,7 @@
           <div class="cards-header">
             <h3 class="cards-header--title">Рестораны</h3>
           </div>
-          <div class="cards-wrapper">
-
-            <a href="./goods.html" class="card">
-              <div class="card__image"><img src="./public/rests/pizza_plus_2x.webp" alt="Pizza Plus"></div>
-              <div class="card__description">
-                <div class="card__description--title">
-                  <div class="rest-name">Пицца плюс</div>
-                  <div class="black-box">50 мин</div>
-                </div>
-                <div class="card__description--badge">
-                  <div class="rating-box"><img src="./public/icons/star.svg" alt="rating">4.5</div>
-                  <div class="price-box">от 900 ₽</div>
-                </div>
-                <div class="card__description--tags">                    
-                  <div class="group-box">Пицца</div>
-                  <div class="group-box">Роллы</div>
-                </div>
-              </div>
-            </a>
-            
-            <a href="./goods.html" class="card">
-              <div class="card__image"><img src="./public/rests/tanuki_2x.webp" alt="Tanuki"></div>
-              <div class="card__description">
-                <div class="card__description--title">
-                  <div class="rest-name">Тануки</div>
-                  <div class="black-box">50 мин</div>
-                </div>
-                <div class="card__description--badge">
-                  <div class="rating-box"><img src="./public/icons/star.svg" alt="rating">4.5</div>
-                  <div class="price-box">от 900 ₽</div>
-                </div>
-                <div class="card__description--tags">                  
-                  <div class="group-box">Роллы</div>
-                  <div class="group-box">Cуши</div>
-                  <div class="group-box">Wok</div>
-                </div>
-              </div>
-            </a>
-
-            <a href="./goods.html" class="card">
-              <div class="card__image"><img src="./public/rests/foodband_2x.webp" alt="FoodBand"></div>
-              <div class="card__description">
-                <div class="card__description--title">
-                  <div class="rest-name">FoodBand</div>
-                  <div class="black-box">50 мин</div>
-                </div>
-                <div class="card__description--badge">
-                  <div class="rating-box"><img src="./public/icons/star.svg" alt="rating">4.5</div>
-                  <div class="price-box">от 900 ₽</div>
-                </div>
-                <div class="card__description--tags">
-                  <div class="group-box">Пицца</div>
-                  <div class="group-box">Cуши</div>
-                  <div class="group-box">Роллы</div>
-                  <div class="group-box">Wok</div>
-                </div>
-              </div>
-            </a>
-
-            <a href="./goods.html" class="card">
-              <div class="card__image"><img src="./public/rests/zhadina-pizza_2x.webp" alt="Zhadina pizza"></div>
-              <div class="card__description">
-                <div class="card__description--title">
-                  <div class="rest-name">Жадина Пицца</div>
-                  <div class="black-box">50 мин</div>
-                </div>
-                <div class="card__description--badge">
-                  <div class="rating-box"><img src="./public/icons/star.svg" alt="rating">4.5</div>
-                  <div class="price-box">от 900 ₽</div>
-                </div>
-                <div class="card__description--tags">                  
-                  <div class="group-box">Пицца</div>
-                  <div class="group-box">Cуши</div>
-                </div>
-              </div>
-            </a>
-            
-            <a href="./goods.html" class="card">
-              <div class="card__image"><img src="./public/rests/food_point_2x.webp" alt="Food point"></div>
-              <div class="card__description">
-                <div class="card__description--title">
-                  <div class="rest-name">Точка еды</div>
-                  <div class="black-box">50 мин</div>
-                </div>
-                <div class="card__description--badge">
-                  <div class="rating-box"><img src="./public/icons/star.svg" alt="rating">4.5</div>
-                  <div class="price-box">от 900 ₽</div>
-                </div>
-                <div class="card__description--tags">                  
-                  <div class="group-box">Пицца</div>
-                  <div class="group-box">Роллы</div>
-                  <div class="group-box">Wok</div>
-                </div>
-              </div>
-            </a>
-
-            <a href="./goods.html" class="card">
-              <div class="card__image"><img src="./public/rests/pizzaburger_2x.webp" alt="PizzaBurger"></div>
-              <div class="card__description">
-                <div class="card__description--title">
-                  <div class="rest-name">PizzaBurger</div>
-                  <div class="black-box">50 мин</div>
-                </div>
-                <div class="card__description--badge">
-                  <div class="rating-box"><img src="./public/icons/star.svg" alt="rating">4.5</div>
-                  <div class="price-box">от 900 ₽</div>
-                </div>
-                <div class="card__description--tags">                  
-                  <div class="group-box">Пицца</div>
-                </div>
-              </div>
-            </a>
+          <div class="cards-wrapper" id="rests-container">
 
           </div>
         </div>
@@ -165,7 +55,7 @@
         <div class="cart-modal__header">
           <div class="cart-modal__header-row">
             <div class="cart-modal__header--title">Корзина</div>
-            <span class="close"><img src="./public/icons/close_black.svg" alt="close"></span>
+            <span class="close" id="cart-modal-close"><img src="./public/icons/close_black.svg" alt="close"></span>
           </div>
         </div>
 
@@ -247,7 +137,7 @@
 
         <div class="cart-modal__footer">
           <div class="cart-modal__item-controls">
-            <span class="products-price">1395 ₽</span>
+            <span class="products-price">1645 ₽</span>
             <button class="btn btn-primary">Оформить заказ</button>
           </div>  
         </div>
@@ -269,14 +159,13 @@
             </ul>
           </div>
           <div class="footer-social">
-            <img src="./public/social/insta.png" alt="Instagram">
-            <img src="./public/social/fb.png" alt="Facebook">
-            <img src="./public/social/vk.png" alt="VK">
+            <img src="./public/social/insta.svg" alt="Instagram">
+            <img src="./public/social/fb.svg" alt="Facebook">
+            <img src="./public/social/vk.svg" alt="VK">
           </div>
         </div>
       </div>
     </footer>
   </div>
-    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
