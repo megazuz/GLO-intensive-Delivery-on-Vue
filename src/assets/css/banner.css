@@ -4,7 +4,7 @@
 
 .banner-item {
   background: #fff1b8;
-  background-image: url('./banners/bg-banner1_cr.png');
+  background-image: url('../images/banners/bg-banner1_cr.png');
   background-position: center right;
   background-repeat: no-repeat;
   background-size: contain;

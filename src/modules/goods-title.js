@@ -1,6 +1,6 @@
 'use strict';
 
-import { restsArray } from '/src/modules/rests-array';
+import { restsArray } from '@/modules/rests-array';
 
 export const goodsTitleFunc = () => {
   const restId = new URL(document.location).searchParams.get('id');

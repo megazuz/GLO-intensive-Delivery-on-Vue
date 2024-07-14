@@ -1,24 +1,26 @@
 'use strict';
-import './css/fonts.css'; // подключаемые шрифты
-import './css/main.css'; // основной css
-import './css/boxes.css'; // ходовые универсальные форматирования дивов
-import './css/buttons.css'; // форматирование кнопок
-import './css/header.css'; // стили чердака
-import './css/banner.css'; // стили баннеров
-import './css/cards.css'; // раздел с карточками
-import './css/footer.css'; // стили подвала
-import './css/media.css'; // @media стили
-import './css/cart-modal.css'; // стили модального окна корзины
+import '@/assets/css/fonts.css'; // подключаемые шрифты
+import '@/assets/css/main.css'; // основной css
+import '@/assets/css/boxes.css'; // ходовые универсальные форматирования дивов
+import '@/assets/css/buttons.css'; // форматирование кнопок
+// import '@/assets/css/header.css'; // стили чердака
+// import '@/assets/css/banner.css'; // стили баннеров
+import '@/assets/css/cards.css'; // раздел с карточками
+// import '@/assets/css/footer.css'; // стили подвала
+import '@/assets/css/media.css'; // @media стили
+// import '@/assets/css/cart-modal.css'; // стили модального окна корзины
 
-import { modalFunc } from '/src/modules/modal';
-modalFunc();
-import { restsFunc } from '/src/modules/rests';
-restsFunc();
-import { goodsTitleFunc } from '/src/modules/goods-title';
-goodsTitleFunc();
-import { goodsFunc } from '/src/modules/goods';
-goodsFunc();
+// import { modalFunc } from '@/modules/modal';
+// modalFunc();
+// import { restsFunc } from '@/modules/rests';
+// restsFunc();
+// import { goodsTitleFunc } from '@/modules/goods-title';
+// goodsTitleFunc();
+// import { goodsFunc } from '@/modules/goods';
+// goodsFunc();
 
-// import { createApp } from 'vue'
-// import App from './App.vue'
-// createApp(App).mount('#app')
+import { createApp } from 'vue'
+import App from './App.vue'
+import router from './router'
+
+createApp(App).use(router).mount('#app')

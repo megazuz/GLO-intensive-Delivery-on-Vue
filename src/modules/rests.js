@@ -1,6 +1,6 @@
 'use strict';
 
-import { restsArray } from '/src/modules/rests-array';
+import { restsArray } from '@/modules/rests-array';
 
 export const restsFunc = () => {
   const container = document.querySelector('#rests-container');

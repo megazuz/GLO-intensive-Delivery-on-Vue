@@ -1,7 +1,7 @@
 {
-  "name": "glo-intensive-vue",
-  "private": true,
+  "name": "vue-project",
   "version": "0.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
     "start": "vite",
@@ -9,7 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.4.29"
+    "vue": "^3.4.29",
+    "vue-router": "^4.3.3"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.5",

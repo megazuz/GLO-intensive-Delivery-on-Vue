@@ -1,6 +1,6 @@
 'use strict';
 
-import { goodsArray } from '/src/modules/goods-array';
+import { goodsArray } from '@/modules/goods-array';
 
 export const goodsFunc = () => {
   const container = document.querySelector('#goods-container');
